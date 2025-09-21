@@ -1,41 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power Cleaning & Maintenance</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #000000; /* changed from #1a73e8 to black */
-    }
-    h2 {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      color: #ff9900;
-    }
-    p {
-      margin-top: 2rem;
-      font-size: 1.1rem;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Cleaning & Maintenance | Professional Cleaning & Maintenance Services</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #9CAF88 0%, #6B8E23 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold text-gray-900">Power Cleaning & Maintenance</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-green-800 font-medium px-3 py-2 rounded-md text-sm">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-green-800 font-medium px-3 py-2 rounded-md text-sm">Services</a>
+                    <a href="https://wa.me/447739043312" class="flex items-center bg-green-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-green-600 transition duration-300 mr-2">
+                        <i data-feather="message-circle" class="mr-2"></i> WhatsApp
+                    </a>
+                    <a href="mailto:info@power-cm.com" class="flex items-center bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition duration-300">
+                        <i data-feather="mail" class="mr-2"></i> Email
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  <h1>Power Cleaning & Maintenance</h1>
-  <h2>Under Construction</h2>
-  <p>Contact us at <a href="tel:+447739043312">+44 7739 043312</a> or <a href="mailto:info@power-cm.com">info@power-cm.com</a></p>
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="text-center" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Professional Cleaning & Maintenance Services You Can Trust</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">We deliver exceptional cleaning and maintenance results for homes and businesses using eco-friendly products and state-of-the-art equipment.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Price List Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Price List</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Transparent pricing for our professional cleaning services</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4 border-b pb-2">Residential Cleaning</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between">
+                                <span>Studio/1 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>2-3 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>3-5 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4 border-b pb-2">Commercial Cleaning</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between">
+                                <span>All Sizes</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4 border-b pb-2">End of Tenancy Cleaning</h3>
+                        <ul class="space-y-3">
+                            <li class="flex justify-between">
+                                <span>Studio/1 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>2-3 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>3-5 Bed</span>
+                                <span class="font-medium">POA</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4 border-b pb-2">Services Include</h3>
+                        <ul class="space-y-2">
+                            <li>General Maintenance</li>
+                            <li>Carpet Cleaning</li>
+                            <li>End of Tenancy Cleaning</li>
+                            <li>Professional Cleaning services for offices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-8 py-4 text-center">
+                    <p class="text-gray-600">*POA = Price on Application. Contact us for a personalised quote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
