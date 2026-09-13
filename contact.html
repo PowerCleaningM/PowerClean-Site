@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Power Cleaning & Maintenance</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+        .dot-pattern {
+            background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-900 shadow-md dark:shadow-none dark:border-b dark:border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <a href="index.html" class="flex items-center gap-2 sm:gap-3 min-w-0">
+                    <img src="assets/logo.png" alt="Power Cleaning & Maintenance logo" class="h-11 w-11 sm:h-14 sm:w-14 lg:h-16 lg:w-16 rounded-lg object-contain shadow-sm flex-shrink-0">
+                    <div class="leading-tight min-w-0">
+                        <p class="font-heading text-sm sm:text-base lg:text-lg font-bold text-gray-900 dark:text-white tracking-tight">Power Cleaning <span class="text-emerald-700 dark:text-emerald-400">&amp; Maintenance</span></p>
+                        <p class="hidden sm:block text-[11px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest">Residential &amp; Commercial Care</p>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 font-medium px-3 py-2 text-sm border-b-2 border-transparent hover:border-emerald-200 dark:hover:border-emerald-800 transition">Home</a>
+                    <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 font-medium px-3 py-2 text-sm border-b-2 border-transparent hover:border-emerald-200 dark:hover:border-emerald-800 transition">Services</a>
+                    <a href="contact.html" class="text-emerald-700 dark:text-emerald-400 font-medium px-3 py-2 text-sm border-b-2 border-emerald-700 dark:border-emerald-400">Contact</a>
+                </div>
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="https://www.facebook.com/profile.php?id=61575059015799" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook" title="Facebook" class="flex items-center justify-center h-11 w-11 bg-[#1877F2] text-white rounded-full hover:bg-[#0f60d1] transition duration-300 shadow-sm">
+                        <i data-feather="facebook" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://wa.me/447739043312" aria-label="Chat on WhatsApp" title="WhatsApp" class="flex items-center justify-center h-11 w-11 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition duration-300 shadow-sm">
+                        <i data-feather="message-circle" class="h-5 w-5"></i>
+                    </a>
+                    <a href="mailto:info@power-cm.com" class="flex items-center border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-800 transition duration-300">
+                        <i data-feather="mail" class="mr-2 h-4 w-4"></i> Email
+                    </a>
+                </div>
+                <div class="lg:hidden flex items-center space-x-1 flex-shrink-0">
+                    <a href="https://www.facebook.com/profile.php?id=61575059015799" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Facebook" class="p-2 text-[#1877F2] rounded-full hover:bg-blue-50 dark:hover:bg-blue-950">
+                        <i data-feather="facebook" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://wa.me/447739043312" aria-label="Chat on WhatsApp" class="p-2 text-emerald-600 dark:text-emerald-400 rounded-full hover:bg-emerald-50 dark:hover:bg-emerald-950">
+                        <i data-feather="message-circle" class="h-5 w-5"></i>
+                    </a>
+                    <a href="mailto:info@power-cm.com" aria-label="Email us" class="p-2 text-gray-600 dark:text-gray-300 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <i data-feather="mail" class="h-5 w-5"></i>
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" class="p-2 text-gray-700 dark:text-gray-200 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800">
+                        <i data-feather="menu" id="menu-icon-open" class="h-6 w-6"></i>
+                        <i data-feather="x" id="menu-icon-close" class="h-6 w-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+            <div class="px-4 py-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-200 font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition">Home</a>
+                <a href="services.html" class="block px-3 py-2.5 rounded-lg text-gray-700 dark:text-gray-200 font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition">Services</a>
+                <a href="contact.html" class="block px-3 py-2.5 rounded-lg text-emerald-700 dark:text-emerald-400 font-medium bg-emerald-50 dark:bg-emerald-900/20">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-emerald-900 to-emerald-700 text-white overflow-hidden">
+        <div class="absolute inset-0 dot-pattern"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center" data-aos="fade-up">
+            <span class="inline-flex items-center gap-2 bg-white/10 text-emerald-50 text-xs font-semibold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/20">
+                <i data-feather="message-circle" class="h-3.5 w-3.5"></i> We Reply Fast
+            </span>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold leading-tight mb-4">Get In Touch</h1>
+            <p class="text-lg md:text-xl text-emerald-50/90 max-w-2xl mx-auto">Send us a message or reach out directly — we aim to respond quickly.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-16 bg-white dark:bg-gray-950">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-5 gap-10">
+                <div class="md:col-span-2 space-y-4" data-aos="fade-right">
+                    <a href="https://wa.me/447739043312" class="flex items-center gap-4 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-900/20 hover:bg-emerald-100 dark:hover:bg-emerald-900/30 transition">
+                        <div class="h-11 w-11 rounded-full bg-emerald-600 flex items-center justify-center flex-shrink-0">
+                            <i data-feather="message-circle" class="h-5 w-5 text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 dark:text-white">WhatsApp</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Chat with us directly</p>
+                        </div>
+                    </a>
+                    <a href="mailto:info@power-cm.com" class="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-900 dark:ring-1 dark:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        <div class="h-11 w-11 rounded-full bg-gray-700 flex items-center justify-center flex-shrink-0">
+                            <i data-feather="mail" class="h-5 w-5 text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 dark:text-white">Email</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">info@power-cm.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61575059015799" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-xl bg-gray-50 dark:bg-gray-900 dark:ring-1 dark:ring-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        <div class="h-11 w-11 rounded-full bg-[#1877F2] flex items-center justify-center flex-shrink-0">
+                            <i data-feather="facebook" class="h-5 w-5 text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-900 dark:text-white">Facebook</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Follow &amp; message us</p>
+                        </div>
+                    </a>
+                </div>
+                <form action="mailto:info@power-cm.com" method="post" enctype="text/plain" class="md:col-span-3 bg-gray-50 dark:bg-gray-900 dark:ring-1 dark:ring-gray-800 rounded-xl p-6 space-y-4" data-aos="fade-left">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Name</label>
+                            <input type="text" name="Name" required class="w-full rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone</label>
+                            <input type="tel" name="Phone" class="w-full rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                        <input type="email" name="Email" required class="w-full rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                        <textarea name="Message" rows="4" required class="w-full rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+                    </div>
+                    <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition duration-300">
+                        <i data-feather="send" class="mr-2 h-4 w-4"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+    <script>
+        feather.replace();
+    </script>
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = !menu.classList.contains('hidden');
+            menu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+            menuBtn.setAttribute('aria-expanded', String(!isOpen));
+        });
+
+        menu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>
